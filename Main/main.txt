@@ -1,0 +1,73 @@
+
+
+--------------Comment utiliser la classe main?
+
+
+
+----1)Vérifier la comptabilité avec la classe carte
+
+
+  -->Dans le fichier cellcarte.h, on a la commande préprocesseur : #include "carte.h"
+
+  -->Dans le fichier cellcarte.h, on a la commande préprocesseur : #define TypeValCarte Carte
+
+  -->Dans le fichier main.cpp, on utilise les accesseurs Carte::getEns() (pour obtenir l'enseigne) et Carte::getNum() (pour obtenir le numero).
+ 
+
+----2)Inclure "listecarte.h" dans votre fichier.
+
+Petit changement :
+/*
+  -->Comme on utilise deux types de liste (liste de cartes et liste de joueurs) et pour éviter les conflits dues aux mêmes noms des méthodes, on utilise l'espace de nom lstcarte.
+*/
+  -->Les espaces de noms permettent de différencier des fonctions ayant le même om mais ne permet pas de différencier des classes de même nom : FAIL
+  -->Pour différiencier les listes cartes des listes joueurs, on est obligé de les appeler différement : ListeCarte et ListeJoueur.
+  -->Plus besoin de s'inquiéter pour les méthodes ayant le même nom car ces méthodes sont appelées par l'instance courante qui elle ne se trompe pas.
+  -->En fait mon ancienne remarque était mal formulée, je voulais dire : pour éviter les conflits dus aux mêmes noms des classes . 
+
+
+----3)Utiliser les fonctions décrites dans listecarte.h
+
+
+  --> C'est les mêmes noms et les mêmes fonctionnalitées que dans le fichier liste.h
+
+
+
+----4)Compiler correctement votre programme
+
+
+  --> Ajouter dans vos sources cellcarte.cpp listecarte.cpp et main.cpp.
+
+
+
+
+
+
+-------------- Si ça ne fonctionne pas correctement ?
+
+
+
+
+  --> utiliser le programme testmain :
+
+  -implémenter la méthode afficherCarte() dans testmain.cpp. 
+
+  -faire :
+ g++ cellcarte.cpp listecarte.cpp main.cpp testmain.cpp -o testmain
+ ./testmain
+
+
+ vérifier que chaque test donne bien le bon résultat
+
+
+  --> si erreur
+
+  -Vérifier les étapes du 1)
+  -Envoyer moi votre carte.h et votre carte.cpp
+
+  --> si pas d'erreur
+
+  -Vérifier la bonne utilisation des méthodes de main.h dans votre programme.
+
+
+END 

@@ -1,0 +1,71 @@
+                                                             fait le 03/01/2015|
+                    _   _       _           _                                  |
+                   | \ | |     (_)         (_)                                 |
+                   |  \| | __ _ _ _ __      _  __ _ _   _ _ __   ___           |
+                   | . ` |/ _` | | '_ \    | |/ _` | | | | '_ \ / _ \          |
+                   | |\  | (_| | | | | |   | | (_| | |_| | | | |  __/          |
+                   \_| \_/\__,_|_|_| |_|   | |\__,_|\__,_|_| |_|\___|          |
+                                          _/ |                                 |
+                                         |__/                                  |
+                                                                               |
+__________________________________Auteurs:_____________________________________|
+                                                                               |
+ Jeremy BRESSAND                                                               |
+ Victor CONNES                                                                 |
+ Alain ALIGNAN                                                                 |
+                                                                               |
+________________________________Compilation:___________________________________|
+                                                                               |
+1) Ouvrir un terminal                                                          |
+                                                                               |
+2) Entrer dans le répertoire "nainjaune_src"                                   |
+   (à l'aide de la commande cd nainjaune_src)                                  |
+                                                                               |
+3) Compiler en exécutant la commande:  make                                    |
+                                                                               |
+4) Lancer l'exécutable nainjaune                                               |
+                                                                               |
+__________________________Utilisation: ./nainjaune_____________________________|
+                                   ou: ./nainjaune --help                      |
+                                   ou: ./nainjaune --debug                     |
+                                                                               |
+   Avec:                                                                       |
+         --help      affiche le fichier help.txt dans le terminal              |
+         --debug     lance le jeu en mode debug (possibilité de changer la     |
+                     configuration du jeu à n'importe quel moment)             |
+                                                                               |
+_________________________Méthode de saisie des cartes__________________________|
+                                                                               |
+  Numéro/Enseigne                                                              |
+                                                                               |
+  --> Coeur:H                                                                  |
+  --> Carreau:C                                                                |
+  --> Pique:P                                                                  |
+  --> Trèfle:T                                                                 |
+                                                                               |
+  --> Valet:V                                                                  |
+  --> Dame:D                                                                   |
+  --> Roi:R                                                                    |
+                                                                               |
+  Exemple: R/H 10/C 2/T V/P D/C 1/P 3/C 4/H                                    |
+                                                                               |
+  Note: Il est possible d'enchaîner la saisie de cartes lorsque c'est à votre  |
+       	tour de jouer.                                                         |
+        Exemple: saisisser la ligne : "J 2/T J 3/P J 4/C J 5/H S"              |
+                J:jouer                                                        |
+                S:passer                                                       |
+                                                                               |
+-------------------------------------------------------------------------------|
+                                                                               |
+                                                                               |
+                                                                               |
+                                                                               |
+                 ___     ___    _  _        _    ___    _   _     _            |
+         o O O  | _ )   / _ \  | \| |    _ | |  | __|  | | | |   | |           |
+        o       | _ \  | (_) | | .` |   | || |  | _|   | |_| |   |_|           |
+       TS__[O]  |___/   \___/  |_|\_|   _\__/   |___|   \___/   _(_)_          |
+      {======|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_| """ |         |
+     ./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'         |
+                                                                               |
+                                                                               |
+_______________________________________________________________________________|
